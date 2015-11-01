@@ -27,10 +27,6 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-### Migration
-
-Migration run
-
 ```php
         $response = new StandardizedJsonResponse();
         $response->setStatus(StandardizedJsonResponse::STATUS_SUCCESS);
@@ -40,5 +36,6 @@ Migration run
             )
         );
         $response->setMessage('The message');
+
         return $response->getResponse();
 ```
