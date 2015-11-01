@@ -1,5 +1,5 @@
 {
-  "name": "Browomir/StandardizedJsonResponse",
+  "name": "browomir/standardized-json-response",
   "description": "Simple class to prepare standardized JSON response based on JSend specification",
   "keywords": [
     "JSON",

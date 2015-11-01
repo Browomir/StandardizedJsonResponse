@@ -1,4 +1,4 @@
-StandardizedJsonResponse
+Standardized Json Response
 =========
 Simple class to prepare standardized JSON response based on JSend specification
 
@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require browomir/StandardizedJsonResponse "dev-master"
+php composer.phar require browomir/standardized-json-response "dev-master"
 ```
 
 or add
 
 ```
-"browomir/StandardizedJsonResponse": "*"
+"browomir/standardized-json-response": "*"
 ```
 
 to the require section of your `composer.json` file.
