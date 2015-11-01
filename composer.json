@@ -1,0 +1,21 @@
+{
+  "name": "Browomir/StandardizedJsonResponse",
+  "description": "Simple class to prepare standardized JSON response based on JSend specification",
+  "keywords": [
+    "JSON",
+    "class",
+    "response",
+    "JSend"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Browomir"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Browomir\\": ""
+    }
+  }
+}
