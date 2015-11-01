@@ -80,4 +80,13 @@ class StandardizedJsonResponse
             'message' => $this->message
         );
     }
+
+    /**
+     * return JSON response
+     * @return string
+     */
+    public function getEncodedResponse()
+    {
+        return json_encode($this->getResponse());
+    }
 }
