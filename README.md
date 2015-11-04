@@ -16,7 +16,7 @@ php composer.phar require browomir/standardized-json-response "dev-master"
 or add
 
 ```
-"browomir/standardized-json-response": "*"
+"browomir/standardized-json-response": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
