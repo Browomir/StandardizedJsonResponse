@@ -1,8 +1,10 @@
 <?php
 
-namespace Browomir;
+namespace StandardizedJsonResponse;
 
-class StandardizedJsonResponse
+use StandardizedJsonResponse\Exception\InvalidStatusException;
+
+class Response
 {
     const STATUS_SUCCESS = 'success';
     const STATUS_ERROR = 'error';
@@ -13,7 +15,7 @@ class StandardizedJsonResponse
     private $message;
     private $data;
 
-    public function __construct($status = self::STATUS_ERROR, $message = self::DEFAULT_MESSAGE, $data = null)
+    public function __construct($status = self::STATUS_ERROR, $message = self::DEFAULT_MESSAGE, $data = array())
     {
         $this->setStatus($status);
         $this->setMessage($message);
@@ -21,7 +23,7 @@ class StandardizedJsonResponse
     }
 
     /**
-     * @return mixed
+     * @return array
      */
     public function getData()
     {
@@ -29,15 +31,19 @@ class StandardizedJsonResponse
     }
 
     /**
-     * @param mixed $data
+     * @param array $data
      */
     public function setData($data)
     {
-        $this->data = $data;
+        if (is_array($data)) {
+            $this->data = $data;
+        } else {
+            throw new \InvalidArgumentException('Data element is incorrect. Only array is allowed!');
+        }
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getMessage()
     {
@@ -45,11 +51,15 @@ class StandardizedJsonResponse
     }
 
     /**
-     * @param mixed $message
+     * @param string $message
      */
     public function setMessage($message)
     {
-        $this->message = $message;
+        if (is_string($message)) {
+            $this->message = $message;
+        } else {
+            throw new \InvalidArgumentException('Message is not a string!');
+        }
     }
 
     /**
@@ -61,11 +71,15 @@ class StandardizedJsonResponse
     }
 
     /**
-     * @param mixed $status
+     * @param string $status
      */
     public function setStatus($status)
     {
-        $this->status = $status;
+        if ($status === self::STATUS_SUCCESS || $status === self::STATUS_ERROR || $status === self::STATUS_FAIL) {
+            $this->status = $status;
+        } else {
+            throw new InvalidStatusException('Invalid response status!');
+        }
     }
 
     /**
