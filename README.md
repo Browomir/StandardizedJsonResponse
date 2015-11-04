@@ -5,7 +5,7 @@ Simple class to prepare standardized JSON response based on JSend specification
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+The preferred way to install this class is through [composer](http://getcomposer.org/download/).
 
 Either run
 
