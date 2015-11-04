@@ -25,17 +25,20 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+This simple example show how you can use this class:
 
 ```php
-        $response = new StandardizedJsonResponse();
-        $response->setStatus(StandardizedJsonResponse::STATUS_SUCCESS);
-        $response->setData(
-            array(
-                'lorem' => 'ipsum'
-            )
-        );
-        $response->setMessage('The message');
+require_once 'vendor/autoload.php';
+use StandardizedJsonResponse\Response;
 
-        return $response->getResponse();
+$response = new Response();
+$response->setStatus(Response::STATUS_SUCCESS);
+$response->setData(
+    array(
+        'lorem' => 'ipsum'
+    )
+);
+$response->setMessage('The message');
+
+echo $response->getEncodedResponse();
 ```
