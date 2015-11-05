@@ -15,7 +15,7 @@ class Response
     private $message;
     private $data;
 
-    public function __construct($status = self::STATUS_ERROR, $message = self::DEFAULT_MESSAGE, $data = array())
+    public function __construct($status = self::STATUS_ERROR, $message = self::DEFAULT_MESSAGE, $data = null)
     {
         $this->setStatus($status);
         $this->setMessage($message);
@@ -31,14 +31,14 @@ class Response
     }
 
     /**
-     * @param array $data
+     * @param array/null $data
      */
     public function setData($data)
     {
-        if (is_array($data)) {
+        if (is_array($data) || is_null($data)) {
             $this->data = $data;
         } else {
-            throw new \InvalidArgumentException('Data element is incorrect. Only array is allowed!');
+            throw new \InvalidArgumentException('Data element is incorrect. Only array or null is allowed!');
         }
     }
 

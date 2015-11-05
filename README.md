@@ -1,6 +1,6 @@
 Standardized Json Response
 =========
-Simple class to prepare standardized JSON response based on JSend specification
+Simple class to prepare standardized JSON response based on [JSend](http://labs.omniti.com/labs/jsend) specification
 
 Installation
 ------------
