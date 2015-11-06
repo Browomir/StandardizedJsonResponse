@@ -29,6 +29,7 @@ This simple example show how you can use this class:
 
 ```php
 require_once 'vendor/autoload.php';
+
 use StandardizedJsonResponse\Response;
 
 $response = new Response();
