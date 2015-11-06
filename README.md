@@ -42,3 +42,5 @@ $response->setMessage('The message');
 
 echo $response->getEncodedResponse();
 ```
+
+[![Latest Stable Version](https://poser.pugx.org/browomir/standardized-json-response/v/stable)](https://packagist.org/packages/browomir/standardized-json-response) [![Total Downloads](https://poser.pugx.org/browomir/standardized-json-response/downloads)](https://packagist.org/packages/browomir/standardized-json-response) [![Latest Unstable Version](https://poser.pugx.org/browomir/standardized-json-response/v/unstable)](https://packagist.org/packages/browomir/standardized-json-response) [![License](https://poser.pugx.org/browomir/standardized-json-response/license)](https://packagist.org/packages/browomir/standardized-json-response)
