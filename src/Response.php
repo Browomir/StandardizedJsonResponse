@@ -63,7 +63,7 @@ class Response
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getStatus()
     {
