@@ -20,7 +20,7 @@ install:
   - composer require browomir/standardized-json-response "dev-master"
 
 script:
-  - phpunit --configuration vendor/browomir/standardized-json-response/travis.phpunit.xml --coverage-clover=coverage.clover
+  - phpunit --configuration vendor/browomir/standardized-json-response/phpunit.xml.dist --coverage-clover=coverage.clover
 
 after_success:
   - wget https://scrutinizer-ci.com/ocular.phar

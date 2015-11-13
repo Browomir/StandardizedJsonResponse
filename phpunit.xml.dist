@@ -12,7 +12,7 @@
          bootstrap="tests/bootstrap.php"
         >
     <testsuites>
-        <testsuite name="StandardizedJsonResponse Test Suite - travis">
+        <testsuite name="StandardizedJsonResponse Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

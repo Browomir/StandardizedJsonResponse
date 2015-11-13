@@ -1,5 +1,5 @@
 <?php
-namespace StandardizedJsonResponse;
+namespace StandardizedJsonResponseTest;
 
 class ResponseTest extends \PHPUnit_Framework_TestCase
 {
