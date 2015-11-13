@@ -1,29 +1,32 @@
 Standardized Json Response
-=========
+==========================
 Simple class to prepare standardized JSON response based on [JSend](http://labs.omniti.com/labs/jsend) specification
 
-Installation
-------------
+# Installation
 
 The preferred way to install this class is through [composer](http://getcomposer.org/download/).
 
 Either run
 
-```
+```sh
 php composer.phar require browomir/standardized-json-response "dev-master"
 ```
 
 or add
 
-```
-"browomir/standardized-json-response": "dev-master"
+```js
+// composer.json
+{
+    "require": {
+        "browomir/standardized-json-response": "dev-master"
+    }
+}
 ```
 
 to the require section of your `composer.json` file.
 
 
-Usage
------
+# Usage
 
 This simple example show how you can use this class:
 
@@ -45,4 +48,11 @@ echo $response->getEncodedResponse();
 
 ```
 
-[![Latest Stable Version](https://poser.pugx.org/browomir/standardized-json-response/v/stable)](https://packagist.org/packages/browomir/standardized-json-response) [![Total Downloads](https://poser.pugx.org/browomir/standardized-json-response/downloads)](https://packagist.org/packages/browomir/standardized-json-response) [![Latest Unstable Version](https://poser.pugx.org/browomir/standardized-json-response/v/unstable)](https://packagist.org/packages/browomir/standardized-json-response) [![License](https://poser.pugx.org/browomir/standardized-json-response/license)](https://packagist.org/packages/browomir/standardized-json-response)
+[![Build Status](https://travis-ci.org/Browomir/standardized-json-response.svg?branch=master)](https://travis-ci.org/Browomir/standardized-json-response)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Browomir/standardized-json-response/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Browomir/standardized-json-response/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/Browomir/standardized-json-response/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Browomir/standardized-json-response/?branch=master)
+[![Latest Stable Version](https://poser.pugx.org/browomir/standardized-json-response/v/stable)](https://packagist.org/packages/browomir/standardized-json-response)
+[![Latest Unstable Version](https://poser.pugx.org/browomir/standardized-json-response/v/unstable)](https://packagist.org/packages/browomir/standardized-json-response)
+[![Dependency Status](https://www.versioneye.com/user/projects/56461917b5b03d001f00081b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56461917b5b03d001f00081b)
+[![Total Downloads](https://poser.pugx.org/browomir/standardized-json-response/downloads)](https://packagist.org/packages/browomir/standardized-json-response)
+[![License](https://poser.pugx.org/browomir/standardized-json-response/license)](https://packagist.org/packages/browomir/standardized-json-response)

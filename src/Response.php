@@ -31,7 +31,7 @@ class Response
     }
 
     /**
-     * @param array/null $data
+     * @param array $data
      */
     public function setData($data)
     {
